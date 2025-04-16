@@ -1,3 +1,69 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  background-color: #0d0f1a;
+  color: #cde7ff;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #42aaff;
+  text-shadow: 0 0 10px #42aaff;
+}
+
+input, button {
+  border: none;
+  outline: none;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input {
+  background-color: #1a1e2e;
+  color: #cde7ff;
+  border: 1px solid #42aaff;
+  box-shadow: 0 0 6px #42aaff55;
+}
+
+button {
+  background-color: #1a1e2e;
+  color: #42aaff;
+  border: 1px solid #42aaff;
+  box-shadow: 0 0 6px #42aaff99;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #42aaff;
+  color: #0d0f1a;
+  box-shadow: 0 0 12px #42aaff;
+}
+
+form, .exercise-card {
+  background: rgba(20, 25, 40, 0.8);
+  border: 1px solid #42aaff55;
+  box-shadow: 0 0 10px #42aaff33;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.exercise-card {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #2e3a5e;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 6px;
+  background: linear-gradient(90deg, #42aaff, #00ffc6);
+  box-shadow: 0 0 6px #42aaff;
+  transition: width 0.4s ease;
+}
